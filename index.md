@@ -1,8 +1,37 @@
 ---
 layout: page
-title: A Jekyll theme made using W3CSS
+title: A full Linux system for your phone / tablet
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nibh, suscipit sed rhoncus quis, blandit quis sapien. Ut congue pharetra rhoncus. Praesent finibus vitae urna quis cursus. Proin mollis elementum sapien, vitae viverra magna tincidunt a. Nullam tincidunt interdum dui ut ultricies. Maecenas pellentesque tellus ac mauris faucibus elementum. Nulla quis risus aliquam, pharetra neque non, dapibus augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras ullamcorper lacinia augue in placerat. Suspendisse lacinia massa id blandit varius. Mauris ultricies ultricies bibendum.
+### What's the Plan?
 
-Mauris eu lectus fermentum leo dictum hendrerit. Maecenas vel leo sit amet quam laoreet consequat vitae nec eros. Curabitur eleifend eu orci quis consectetur. Sed pretium tortor at consequat tincidunt. Nullam a tellus faucibus, dapibus tortor eget, ullamcorper metus. Aenean at aliquet metus. Aenean molestie metus rutrum, tincidunt nulla quis, tincidunt lorem. Morbi diam sem, rutrum vitae convallis eget, dignissim semper lacus. Curabitur ipsum diam, tincidunt in hendrerit sit amet, luctus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+![](/img/scorpion_plasma.png){:width="50%"}
+![](/img/yuga_plasma_mobile.jpg){:width="45%"}
+Basically ... this.
+
+Well, of course this picture is faked, but seeing this in reality it's not far away.
+
+I'm quite successfully working on making debian work on top of Halium.
+Halium allows running GNU/Linux on Android devices by using Androids drivers in the absence of real open-source drivers.
+Of course once mainline support is available, debian can of course run on top of the mainline kernel on those devices.
+
+### What has already been done:
+
+* Packaging Plasma Mobile
+    * kwin-hwcomposer backend
+    * plasma-phone-components
+    * plasma settings
+* Packaging libhybris
+* Set up initial binary repository
+* Release first working rootfs builds
+
+### What still needs to be done:
+
+* Make one libhybris-build compatible with caf and non-caf devices and multiple android versions at the same time
+* Build all packages
+* Test
+* Get all packages into debian
+
+### Non-graphical development rootfs builds
+
+[Available on github](https://github.com/debian-pm-tools/rootfs-builder/releases)
